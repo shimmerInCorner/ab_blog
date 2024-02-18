@@ -42,7 +42,7 @@ jobs:
       run: |
         hexo clean
         hexo generate
-
+        
     - name: Deploy hexo blog
       env:
           ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY }}
