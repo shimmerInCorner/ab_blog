@@ -62,5 +62,5 @@ ignore: null
 theme: vivia
 deploy:
   type: git
-  repo: git@github.com:shimmerInCorner/ab_blog_page.git
-  branch: master
+  repo: git@github.com:shimmerInCorner/ab_blog.git
+  branch: gh-pages
