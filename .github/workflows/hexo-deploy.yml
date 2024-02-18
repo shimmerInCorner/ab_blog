@@ -42,19 +42,19 @@ jobs:
       run: |
         hexo clean
         hexo generate
-        
-    - name: Deploy hexo blog
+     
+    - name: Setup Hexo
       env:
-          ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY }}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
-          chmod 700 ~/.ssh
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.email "ruichenzhao@foxmail.com"
-          git config --global user.name "ruichenzhao"
+        ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY }}
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 700 ~/.ssh
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.email "ruichenzhao@foxmail.com"
+        git config --global user.name "ruichenzhao"
 
-      - name: Deploy
-        run: |
-          hexo deploy
+    - name: Deploy
+      run: |
+        hexo deploy
