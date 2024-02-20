@@ -48,6 +48,7 @@ sidebar:
       - recent_posts
 
 # 侧边栏组件设置
+previewMode: true
 archive_type: 'monthly'
 recent_posts_limits: 5
 categories:
@@ -72,6 +73,19 @@ comment:
     path: location.pathname
     lang:
     # 详见 https://github.com/imaegoo/twikoo
+    
+    # Valine配置
+    valine:
+      enable: true 
+      appid: StYfTMDp78X0EltFR16ve2q5-gzGzoHsz
+      appkey: G4RPxRpXG6RwdfpnJefOSnyy # your leancloud application appkey
+      notify: false # mail notifier , https://github.com/xCss/Valine/wiki
+      verify: true # Verification code
+      placeholder: ヾﾉ≧∀≦)o来啊，快活啊!  # comment box placeholder
+      avatar: wavatar # gravatar style
+      guest_info: nick,mail,link # custom comment header
+      pageSize: 10 # pagination size
+      visitor: true
 
 #Analytics
 gauges_analytics: false
