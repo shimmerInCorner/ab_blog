@@ -11,6 +11,13 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Check the current timezone database
+        run: |
+          ls /usr/share/zoneinfo
+          echo "---"
+          date
+          echo "---"
+
       - name: Checkout
         uses: actions/checkout@master
 

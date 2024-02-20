@@ -6,7 +6,7 @@ menu:                      # 导航栏上的链接
 rss: /atom.xml
 
 home:
-  style: default           # default, detail
+  style: detail           # default, detail
 
 favicon:                   # Favicon 文件路径，相对于 /source 目录（若你的 Favicon 文件位于 /source/favicon.png 则填写 "/favicon.png"）
 
