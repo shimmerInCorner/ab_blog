@@ -56,18 +56,14 @@ categories:
 
 # 第三方评论系统
 comment:
-  # Valine配置
   valine:
-    enable: true 
-    appid: StYfTMDp78X0EltFR16ve2q5-gzGzoHsz
-    appkey: G4RPxRpXG6RwdfpnJefOSnyy # your leancloud application appkey
-    notify: false # mail notifier , https://github.com/xCss/Valine/wiki
-    verify: true # Verification code
+    enable: true          # 是否启用 Valine 评论系统
+    appId: StYfTMDp78X0EltFR16ve2q5
+    appKey: G4RPxRpXG6RwdfpnJefOSnyy
     placeholder: ヾﾉ≧∀≦)o来啊，快活啊!  # comment box placeholder
-    avatar: wavatar # gravatar style
-    guest_info: nick,mail,link # custom comment header
-    pageSize: 10 # pagination size
-    visitor: true
+    pageSize: 10
+    highlight: true
+    serverURLs: 
     # 可在此添加其他 Valine 支持的配置项
     # 详见 https://valine.js.org/configuration.html
   twikoo:
@@ -77,7 +73,6 @@ comment:
     path: location.pathname
     lang:
     # 详见 https://github.com/imaegoo/twikoo
-
 
 #Analytics
 gauges_analytics: false
