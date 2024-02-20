@@ -56,23 +56,6 @@ categories:
 
 # 第三方评论系统
 comment:
-  valine:
-    enable: false          # 是否启用 Valine 评论系统
-    appId: 
-    appKey: 
-    placeholder: Just go go
-    pageSize: 10
-    highlight: true
-    serverURLs: 
-    # 可在此添加其他 Valine 支持的配置项
-    # 详见 https://valine.js.org/configuration.html
-  twikoo:
-    enable: false           # 是否启用 Twikoo 评论系统
-    envID:
-    region:
-    path: location.pathname
-    lang:
-    # 详见 https://github.com/imaegoo/twikoo
   # Valine配置
   valine:
     enable: true 
@@ -85,6 +68,16 @@ comment:
     guest_info: nick,mail,link # custom comment header
     pageSize: 10 # pagination size
     visitor: true
+    # 可在此添加其他 Valine 支持的配置项
+    # 详见 https://valine.js.org/configuration.html
+  twikoo:
+    enable: false           # 是否启用 Twikoo 评论系统
+    envID:
+    region:
+    path: location.pathname
+    lang:
+    # 详见 https://github.com/imaegoo/twikoo
+
 
 #Analytics
 gauges_analytics: false
