@@ -58,8 +58,8 @@ categories:
 comment:
   valine:
     enable: true          # 是否启用 Valine 评论系统
-    appId: StYfTMDp78X0EltFR16ve2q5
-    appKey: G4RPxRpXG6RwdfpnJefOSnyy
+    appId: O8YdjOxp3r7PpA1MfEDP2h94-gzGzoHsz
+    appKey: eyXNe81oeVwfXV1kPoFfoxMt
     placeholder: ヾﾉ≧∀≦)o来啊，快活啊!  # comment box placeholder
     pageSize: 10
     highlight: true
