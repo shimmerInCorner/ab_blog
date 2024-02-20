@@ -6,7 +6,7 @@ menu:                      # 导航栏上的链接
 rss: /atom.xml
 
 home:
-  style: detail           # default, detail
+  style: default           # default, detail
 
 favicon:                   # Favicon 文件路径，相对于 /source 目录（若你的 Favicon 文件位于 /source/favicon.png 则填写 "/favicon.png"）
 
@@ -18,13 +18,13 @@ banner:
   onAllPages: true               # 在所有页面上显示横幅，而不是只在首页显示
 
 # 外观
-hue: 250                         # 主题色调 (例如：红: 0，橙: 60，蓝：260，紫：300，粉：345)
+hue: 0                         # 主题色调 (例如：红: 0，橙: 60，蓝：260，紫：300，粉：345)
                                  # 可访问 `saicaca.github.io/vivia-preview` 预览颜色设置
 
 # 个人信息
 avatar: media/author_icon.jpg                         # 头像图片文件路径，相对于 /source 目录
 author: Zhao Ruichen
-subtitle: This is the subtitle
+subtitle: 大道之行，无远弗界
 links:
   - name: Twitter
     icon: fa-brands fa-twitter      # 访问 https://fontawesome.com/search 获取图标代码
